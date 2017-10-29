@@ -1,0 +1,82 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        title!= title
+
+        link(href='css/bootstrap.min.css' rel='stylesheet')
+        link(href='css/style.css' type='text/css' rel='stylesheet')
+        link(href='css/font-awesome.min.css' type='text/css' rel='stylesheet')
+
+    body
+        .header
+            .logo
+                h1
+                    a(href='#')
+                        i(aria-hidden='true').fa.fa-scissors  Stichery
+            .cont-menu
+                .head-menu
+                    nav
+                        ul.menu
+                            li(data-contentNumber='home.html').menu-item.active
+                                a(href='/')
+                                    p Home
+                            li(data-contentNumber='servise.html').menu-item
+                                a(href='/service')
+                                    p Services
+                            li(data-contentNumber='contact.html').menu-item
+                                a(href='/contact')
+                                    p Contact
+                    p
+                        i(aria-hidden='true').fa.fa-phone  +123 456 789
+
+        block content
+        .footer
+            .footer-content
+                .footer-left.col-xs-12.col-sm-6.col-md-5.col-lg-5
+                    h3 About Us
+                    p Lorem ipsum dolor sit consectetur elit. Nam eget egestas erat. In hachabi tasse platea dictumst. hachabi tasse platea dictumst
+                    p Lorem ipsum dolor sit consectetur elit. Nam eget egestas erat. In hachabi tasse platea dictumst.
+                    ul
+                        li
+                            a(href='#')
+                                i(aria-hidden='true').fa.fa-facebook
+                        li
+                            a(href='#')
+                                i(aria-hidden='true').fa.fa-twitter
+                        li
+                            a(href='#')
+                                i(aria-hidden='true').fa.fa-google-plus
+                        li
+                            a(href='#')
+                                i(aria-hidden='true').fa.fa-linkedin
+                        li
+                            a(href='#')
+                                i(aria-hidden='true').fa.fa-vimeo
+                        li
+                            a(href='#')
+                                i(aria-hidden='true').fa.fa-youtube
+
+                .footer-center.col-xs-12.col-sm-6.col-md-2.col-lg-2
+                    h3 Links
+                    ul
+                        li
+                            a(href='#') Home
+                        li
+                            a(href='#') Servises
+                        li
+                            a(href='#') Contact
+
+                .footer-right.col-xs-12.col-sm-6.col-md-5.col-lg-5
+                    h3 Newsletter
+                    input(type='text' name='name' placeholder='Name' required)
+                    input(type='email' name='email' placeholder='Email' required)
+                    input(type='submit' value='subscribe now')
+
+            .copyright
+                p Copyright 2017 Stitcher
+
+        script(src='app.js')
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+        script(src='js/active.js' type="text/javascript")
